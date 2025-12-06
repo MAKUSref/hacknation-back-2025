@@ -3,6 +3,7 @@ import express from "express";
 import { config, connectToMongo } from "./config/config";
 import authRouter from "./route/auth.route";
 import userRouter from "./route/user.route";
+import legislationRouter from "./route/legislationProject.route";
 import cors from "cors";
 import Logger from "./config/logger";
 import session from "express-session";
@@ -24,6 +25,7 @@ connectToMongo()
 app.use("/api/auth", authRouter);
 
 app.use("/api/user", userRouter);
+app.use("/api/legislation", legislationRouter);
 
 app.get("/api/health-check", (_req, res) => {
   res.json({ status: "ok" });
