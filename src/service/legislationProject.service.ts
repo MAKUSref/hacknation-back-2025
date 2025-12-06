@@ -55,6 +55,10 @@ export class LegislationProjectService {
     }
   }
 
+  static async deleteAll() {
+    await LegislationProject.deleteMany({});
+  }
+
   static async addStep(projectId: string, step: ILegislationStep) {
     const project = await LegislationProject.findById(projectId);
     if (!project) {

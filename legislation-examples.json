@@ -1,0 +1,617 @@
+[
+  {
+    "_id": "675a1d2f0000000000000001",
+    "title": "Ustawa o cyfryzacji usług publicznych",
+    "description": "Pakiet ułatwień dla e-usług i identyfikacji elektronicznej w administracji publicznej.",
+    "tags": ["dane osobowe", "compliance", "postępowania administracyjne"],
+    "steps": [
+      {
+        "_id": "675a1d2f0000000000000101",
+        "projectId": "675a1d2f0000000000000001",
+        "type": "Pomysł na projekt ustawy",
+        "isActive": false,
+        "startDate": "2024-09-01T00:00:00.000Z",
+        "endDate": "2024-09-15T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000102",
+        "projectId": "675a1d2f0000000000000001",
+        "type": "Projekt wpłynął do Sejmu",
+        "isActive": false,
+        "startDate": "2024-09-20T00:00:00.000Z",
+        "endDate": "2024-10-01T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000103",
+        "projectId": "675a1d2f0000000000000001",
+        "type": "I czytanie na posiedzeniu Sejmu",
+        "isActive": true,
+        "startDate": "2024-11-15T00:00:00.000Z"
+      }
+    ],
+    "createdAt": "2024-09-01T10:00:00.000Z",
+    "updatedAt": "2024-11-15T14:30:00.000Z"
+  },
+  {
+    "_id": "675a1d2f0000000000000002",
+    "title": "Nowelizacja prawa energetycznego",
+    "description": "Implementacja dyrektywy UE dot. OZE i magazynowania energii. Zmiana warunków przyłączenia do sieci elektrycznej.",
+    "tags": ["energetyka", "ochrona środowiska", "compliance"],
+    "steps": [
+      {
+        "_id": "675a1d2f0000000000000201",
+        "projectId": "675a1d2f0000000000000002",
+        "type": "Pomysł na projekt ustawy",
+        "isActive": false,
+        "startDate": "2024-08-01T00:00:00.000Z",
+        "endDate": "2024-08-20T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000202",
+        "projectId": "675a1d2f0000000000000002",
+        "type": "Projekt wpłynął do Sejmu",
+        "isActive": false,
+        "startDate": "2024-09-05T00:00:00.000Z",
+        "endDate": "2024-09-15T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000203",
+        "projectId": "675a1d2f0000000000000002",
+        "type": "Skierowano do I czytania w komisjach",
+        "isActive": false,
+        "startDate": "2024-10-01T00:00:00.000Z",
+        "endDate": "2024-10-20T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000204",
+        "projectId": "675a1d2f0000000000000002",
+        "type": "I czytanie w komisjach",
+        "isActive": true,
+        "startDate": "2024-10-25T00:00:00.000Z"
+      }
+    ],
+    "createdAt": "2024-08-01T09:00:00.000Z",
+    "updatedAt": "2024-10-25T16:45:00.000Z"
+  },
+  {
+    "_id": "675a1d2f0000000000000003",
+    "title": "Ustawa o transporcie publicznym",
+    "description": "Finansowanie zeroemisyjnego taboru i infrastruktury przesiadkowej. Zmiana systemu dofinansowania gmin.",
+    "tags": ["ochrona środowiska", "postępowania administracyjne"],
+    "steps": [
+      {
+        "_id": "675a1d2f0000000000000301",
+        "projectId": "675a1d2f0000000000000003",
+        "type": "Pomysł na projekt ustawy",
+        "isActive": false,
+        "startDate": "2024-07-01T00:00:00.000Z",
+        "endDate": "2024-07-15T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000302",
+        "projectId": "675a1d2f0000000000000003",
+        "type": "Projekt wpłynął do Sejmu",
+        "isActive": false,
+        "startDate": "2024-08-05T00:00:00.000Z",
+        "endDate": "2024-08-15T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000303",
+        "projectId": "675a1d2f0000000000000003",
+        "type": "I czytanie na posiedzeniu Sejmu",
+        "isActive": false,
+        "startDate": "2024-09-01T00:00:00.000Z",
+        "endDate": "2024-09-02T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000304",
+        "projectId": "675a1d2f0000000000000003",
+        "type": "Praca w komisjach po (I, II) czytaniu",
+        "isActive": false,
+        "startDate": "2024-09-10T00:00:00.000Z",
+        "endDate": "2024-10-15T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000305",
+        "projectId": "675a1d2f0000000000000003",
+        "type": "II czytanie na posiedzeniu Sejmu",
+        "isActive": false,
+        "startDate": "2024-10-20T00:00:00.000Z",
+        "endDate": "2024-10-21T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000306",
+        "projectId": "675a1d2f0000000000000003",
+        "type": "III czytanie na posiedzeniu Sejmu",
+        "isActive": false,
+        "startDate": "2024-11-01T00:00:00.000Z",
+        "endDate": "2024-11-02T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000307",
+        "projectId": "675a1d2f0000000000000003",
+        "type": "Stanowisko Senatu",
+        "isActive": false,
+        "startDate": "2024-11-10T00:00:00.000Z",
+        "endDate": "2024-11-15T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000308",
+        "projectId": "675a1d2f0000000000000003",
+        "type": "Ustawę przekazano Prezydentowi do podpisu",
+        "isActive": false,
+        "startDate": "2024-11-16T00:00:00.000Z",
+        "endDate": "2024-11-20T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000309",
+        "projectId": "675a1d2f0000000000000003",
+        "type": "Podpisanie ustawy przez Prezydenta",
+        "isActive": false,
+        "startDate": "2024-11-21T00:00:00.000Z",
+        "endDate": "2024-11-22T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f000000000000030A",
+        "projectId": "675a1d2f0000000000000003",
+        "type": "Ogłoszenie ustawy",
+        "isActive": false,
+        "startDate": "2024-11-23T00:00:00.000Z",
+        "endDate": "2024-11-24T00:00:00.000Z"
+      }
+    ],
+    "createdAt": "2024-07-01T08:00:00.000Z",
+    "updatedAt": "2024-11-24T10:15:00.000Z"
+  },
+  {
+    "_id": "675a1d2f0000000000000004",
+    "title": "Ustawa o podatku od sprzedaży detalicznej",
+    "description": "Nowy podatek od handlu detalicznego powyżej 100 mln zł przychodu. Zmiana stawek VAT na produkty spożywcze.",
+    "tags": ["podatki", "przedsiębiorcy"],
+    "steps": [
+      {
+        "_id": "675a1d2f0000000000000401",
+        "projectId": "675a1d2f0000000000000004",
+        "type": "Pomysł na projekt ustawy",
+        "isActive": false,
+        "startDate": "2024-10-01T00:00:00.000Z",
+        "endDate": "2024-10-10T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000402",
+        "projectId": "675a1d2f0000000000000004",
+        "type": "Projekt wpłynął do Sejmu",
+        "isActive": false,
+        "startDate": "2024-10-15T00:00:00.000Z",
+        "endDate": "2024-10-25T00:00:00.000Z"
+      }
+    ],
+    "createdAt": "2024-10-01T11:00:00.000Z",
+    "updatedAt": "2024-10-25T13:20:00.000Z"
+  },
+  {
+    "_id": "675a1d2f0000000000000005",
+    "title": "Ustawa o ochronie zwierząt",
+    "description": "Nowe wymogi dotyczące hodowli zwierząt, zakaz hodowli na futerko. Wzmocnienie kar za znęcanie się nad zwierzętami.",
+    "tags": ["ochrona środowiska", "przedsiębiorcy"],
+    "steps": [
+      {
+        "_id": "675a1d2f0000000000000501",
+        "projectId": "675a1d2f0000000000000005",
+        "type": "Pomysł na projekt ustawy",
+        "isActive": false,
+        "startDate": "2024-06-01T00:00:00.000Z",
+        "endDate": "2024-06-20T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000502",
+        "projectId": "675a1d2f0000000000000005",
+        "type": "Projekt wpłynął do Sejmu",
+        "isActive": false,
+        "startDate": "2024-07-10T00:00:00.000Z",
+        "endDate": "2024-07-20T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000503",
+        "projectId": "675a1d2f0000000000000005",
+        "type": "I czytanie na posiedzeniu Sejmu",
+        "isActive": false,
+        "startDate": "2024-08-15T00:00:00.000Z",
+        "endDate": "2024-08-16T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000504",
+        "projectId": "675a1d2f0000000000000005",
+        "type": "Praca w komisjach po (I, II) czytaniu",
+        "isActive": false,
+        "startDate": "2024-09-01T00:00:00.000Z",
+        "endDate": "2024-10-01T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000505",
+        "projectId": "675a1d2f0000000000000005",
+        "type": "II czytanie na posiedzeniu Sejmu",
+        "isActive": false,
+        "startDate": "2024-10-15T00:00:00.000Z",
+        "endDate": "2024-10-16T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000506",
+        "projectId": "675a1d2f0000000000000005",
+        "type": "Sprawozdanie komisji",
+        "isActive": false,
+        "startDate": "2024-10-20T00:00:00.000Z",
+        "endDate": "2024-10-22T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000507",
+        "projectId": "675a1d2f0000000000000005",
+        "type": "III czytanie na posiedzeniu Sejmu",
+        "isActive": false,
+        "startDate": "2024-10-30T00:00:00.000Z",
+        "endDate": "2024-10-31T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000508",
+        "projectId": "675a1d2f0000000000000005",
+        "type": "Stanowisko Senatu",
+        "isActive": false,
+        "startDate": "2024-11-05T00:00:00.000Z",
+        "endDate": "2024-11-10T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000509",
+        "projectId": "675a1d2f0000000000000005",
+        "type": "Ustawę przekazano Prezydentowi do podpisu",
+        "isActive": false,
+        "startDate": "2024-11-12T00:00:00.000Z",
+        "endDate": "2024-11-15T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f000000000000050A",
+        "projectId": "675a1d2f0000000000000005",
+        "type": "Podpisanie ustawy przez Prezydenta",
+        "isActive": false,
+        "startDate": "2024-11-16T00:00:00.000Z",
+        "endDate": "2024-11-17T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f000000000000050B",
+        "projectId": "675a1d2f0000000000000005",
+        "type": "Ogłoszenie ustawy",
+        "isActive": false,
+        "startDate": "2024-11-20T00:00:00.000Z",
+        "endDate": "2024-11-21T00:00:00.000Z"
+      }
+    ],
+    "createdAt": "2024-06-01T09:30:00.000Z",
+    "updatedAt": "2024-11-21T12:00:00.000Z"
+  },
+  {
+    "_id": "675a1d2f0000000000000006",
+    "title": "Ustawa o cyberbezpieczeństwie infrastruktury krytycznej",
+    "description": "Wdrożenie dyrektywy NIS2. Nowe obowiązki operatorów usług kluczowych w zakresie ochrony systemów informatycznych i raportowania incydentów.",
+    "tags": ["compliance", "dane osobowe", "przedsiębiorcy"],
+    "steps": [
+      {
+        "_id": "675a1d2f0000000000000601",
+        "projectId": "675a1d2f0000000000000006",
+        "type": "Pomysł na projekt ustawy",
+        "isActive": false,
+        "startDate": "2024-11-01T00:00:00.000Z",
+        "endDate": "2024-11-10T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000602",
+        "projectId": "675a1d2f0000000000000006",
+        "type": "Projekt wpłynął do Sejmu",
+        "isActive": true,
+        "startDate": "2024-11-20T00:00:00.000Z"
+      }
+    ],
+    "createdAt": "2024-11-01T12:00:00.000Z",
+    "updatedAt": "2024-11-20T09:30:00.000Z"
+  },
+  {
+    "_id": "675a1d2f0000000000000007",
+    "title": "Nowelizacja Kodeksu postępowania administracyjnego",
+    "description": "Usprawnienie procedur administracyjnych, rozszerzenie zasady domniemania prawdziwości oświadczeń, cyfryzacja dokumentacji.",
+    "tags": ["postępowania administracyjne", "compliance"],
+    "steps": [
+      {
+        "_id": "675a1d2f0000000000000701",
+        "projectId": "675a1d2f0000000000000007",
+        "type": "Pomysł na projekt ustawy",
+        "isActive": false,
+        "startDate": "2024-05-01T00:00:00.000Z",
+        "endDate": "2024-05-20T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000702",
+        "projectId": "675a1d2f0000000000000007",
+        "type": "Projekt wpłynął do Sejmu",
+        "isActive": false,
+        "startDate": "2024-06-10T00:00:00.000Z",
+        "endDate": "2024-06-20T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000703",
+        "projectId": "675a1d2f0000000000000007",
+        "type": "Skierowano do I czytania w komisjach",
+        "isActive": false,
+        "startDate": "2024-07-01T00:00:00.000Z",
+        "endDate": "2024-07-15T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000704",
+        "projectId": "675a1d2f0000000000000007",
+        "type": "I czytanie w komisjach",
+        "isActive": false,
+        "startDate": "2024-07-20T00:00:00.000Z",
+        "endDate": "2024-08-30T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000705",
+        "projectId": "675a1d2f0000000000000007",
+        "type": "Sprawozdanie komisji",
+        "isActive": true,
+        "startDate": "2024-09-05T00:00:00.000Z"
+      }
+    ],
+    "createdAt": "2024-05-01T10:00:00.000Z",
+    "updatedAt": "2024-09-05T14:20:00.000Z"
+  },
+  {
+    "_id": "675a1d2f0000000000000008",
+    "title": "Ustawa o wspieraniu budownictwa mieszkaniowego",
+    "description": "Program ulg podatkowych dla deweloperów budujących mieszkania na wynajem. Uproszczenie procedur związanych z uzyskaniem pozwoleń na budowę.",
+    "tags": ["budownictwo", "podatki", "postępowania administracyjne"],
+    "steps": [
+      {
+        "_id": "675a1d2f0000000000000801",
+        "projectId": "675a1d2f0000000000000008",
+        "type": "Pomysł na projekt ustawy",
+        "isActive": false,
+        "startDate": "2024-04-01T00:00:00.000Z",
+        "endDate": "2024-04-15T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000802",
+        "projectId": "675a1d2f0000000000000008",
+        "type": "Projekt wpłynął do Sejmu",
+        "isActive": false,
+        "startDate": "2024-05-05T00:00:00.000Z",
+        "endDate": "2024-05-15T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000803",
+        "projectId": "675a1d2f0000000000000008",
+        "type": "I czytanie na posiedzeniu Sejmu",
+        "isActive": false,
+        "startDate": "2024-06-01T00:00:00.000Z",
+        "endDate": "2024-06-02T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000804",
+        "projectId": "675a1d2f0000000000000008",
+        "type": "Praca w komisjach po (I, II) czytaniu",
+        "isActive": false,
+        "startDate": "2024-06-10T00:00:00.000Z",
+        "endDate": "2024-07-20T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000805",
+        "projectId": "675a1d2f0000000000000008",
+        "type": "II czytanie na posiedzeniu Sejmu",
+        "isActive": false,
+        "startDate": "2024-08-01T00:00:00.000Z",
+        "endDate": "2024-08-02T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000806",
+        "projectId": "675a1d2f0000000000000008",
+        "type": "Sprawozdanie komisji",
+        "isActive": false,
+        "startDate": "2024-08-10T00:00:00.000Z",
+        "endDate": "2024-08-15T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000807",
+        "projectId": "675a1d2f0000000000000008",
+        "type": "III czytanie na posiedzeniu Sejmu",
+        "isActive": false,
+        "startDate": "2024-09-01T00:00:00.000Z",
+        "endDate": "2024-09-02T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000808",
+        "projectId": "675a1d2f0000000000000008",
+        "type": "Stanowisko Senatu",
+        "isActive": false,
+        "startDate": "2024-09-10T00:00:00.000Z",
+        "endDate": "2024-09-20T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000809",
+        "projectId": "675a1d2f0000000000000008",
+        "type": "Rozpatrywanie na forum Sejmu stanowiska Senatu",
+        "isActive": false,
+        "startDate": "2024-09-25T00:00:00.000Z",
+        "endDate": "2024-09-26T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f000000000000080A",
+        "projectId": "675a1d2f0000000000000008",
+        "type": "Ustawę przekazano Prezydentowi do podpisu",
+        "isActive": false,
+        "startDate": "2024-09-27T00:00:00.000Z",
+        "endDate": "2024-10-05T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f000000000000080B",
+        "projectId": "675a1d2f0000000000000008",
+        "type": "Podpisanie ustawy przez Prezydenta",
+        "isActive": false,
+        "startDate": "2024-10-06T00:00:00.000Z",
+        "endDate": "2024-10-07T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f000000000000080C",
+        "projectId": "675a1d2f0000000000000008",
+        "type": "Ogłoszenie ustawy",
+        "isActive": false,
+        "startDate": "2024-10-10T00:00:00.000Z",
+        "endDate": "2024-10-11T00:00:00.000Z"
+      }
+    ],
+    "createdAt": "2024-04-01T11:00:00.000Z",
+    "updatedAt": "2024-10-11T09:00:00.000Z"
+  },
+  {
+    "_id": "675a1d2f0000000000000009",
+    "title": "Ustawa o obrocie prawami majątkowymi do utworów sztucznej inteligencji",
+    "description": "Regulacja praw autorskich do dzieł tworzonych przez systemy AI. Określenie odpowiedzialności za treści generowane automatycznie.",
+    "tags": ["compliance", "przedsiębiorcy", "reklama"],
+    "steps": [
+      {
+        "_id": "675a1d2f0000000000000901",
+        "projectId": "675a1d2f0000000000000009",
+        "type": "Pomysł na projekt ustawy",
+        "isActive": false,
+        "startDate": "2024-09-15T00:00:00.000Z",
+        "endDate": "2024-09-30T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000902",
+        "projectId": "675a1d2f0000000000000009",
+        "type": "Projekt wpłynął do Sejmu",
+        "isActive": false,
+        "startDate": "2024-10-10T00:00:00.000Z",
+        "endDate": "2024-10-20T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000903",
+        "projectId": "675a1d2f0000000000000009",
+        "type": "I czytanie na posiedzeniu Sejmu",
+        "isActive": false,
+        "startDate": "2024-11-05T00:00:00.000Z",
+        "endDate": "2024-11-06T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000000904",
+        "projectId": "675a1d2f0000000000000009",
+        "type": "Praca w komisjach po (I, II) czytaniu",
+        "isActive": true,
+        "startDate": "2024-11-15T00:00:00.000Z"
+      }
+    ],
+    "createdAt": "2024-09-15T08:30:00.000Z",
+    "updatedAt": "2024-11-15T10:00:00.000Z"
+  },
+  {
+    "_id": "675a1d2f0000000000000010",
+    "title": "Ustawa o zmianie ustawy o systemie oświaty",
+    "description": "Wprowadzenie obowiązkowej edukacji finansowej w szkołach podstawowych i ponadpodstawowych. Nowe standardy kształcenia w zakresie przedsiębiorczości.",
+    "tags": ["oświata", "przedsiębiorcy"],
+    "steps": [
+      {
+        "_id": "675a1d2f0000000000001001",
+        "projectId": "675a1d2f0000000000000010",
+        "type": "Pomysł na projekt ustawy",
+        "isActive": false,
+        "startDate": "2024-03-01T00:00:00.000Z",
+        "endDate": "2024-03-20T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000001002",
+        "projectId": "675a1d2f0000000000000010",
+        "type": "Projekt wpłynął do Sejmu",
+        "isActive": false,
+        "startDate": "2024-04-10T00:00:00.000Z",
+        "endDate": "2024-04-20T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000001003",
+        "projectId": "675a1d2f0000000000000010",
+        "type": "I czytanie na posiedzeniu Sejmu",
+        "isActive": false,
+        "startDate": "2024-05-15T00:00:00.000Z",
+        "endDate": "2024-05-16T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000001004",
+        "projectId": "675a1d2f0000000000000010",
+        "type": "Praca w komisjach po (I, II) czytaniu",
+        "isActive": false,
+        "startDate": "2024-05-25T00:00:00.000Z",
+        "endDate": "2024-07-10T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000001005",
+        "projectId": "675a1d2f0000000000000010",
+        "type": "II czytanie na posiedzeniu Sejmu",
+        "isActive": false,
+        "startDate": "2024-07-20T00:00:00.000Z",
+        "endDate": "2024-07-21T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000001006",
+        "projectId": "675a1d2f0000000000000010",
+        "type": "Sprawozdanie komisji",
+        "isActive": false,
+        "startDate": "2024-08-01T00:00:00.000Z",
+        "endDate": "2024-08-05T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000001007",
+        "projectId": "675a1d2f0000000000000010",
+        "type": "III czytanie na posiedzeniu Sejmu",
+        "isActive": false,
+        "startDate": "2024-08-20T00:00:00.000Z",
+        "endDate": "2024-08-21T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000001008",
+        "projectId": "675a1d2f0000000000000010",
+        "type": "Stanowisko Senatu",
+        "isActive": false,
+        "startDate": "2024-09-01T00:00:00.000Z",
+        "endDate": "2024-09-10T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f0000000000001009",
+        "projectId": "675a1d2f0000000000000010",
+        "type": "Rozpatrywanie na forum Sejmu stanowiska Senatu",
+        "isActive": false,
+        "startDate": "2024-09-15T00:00:00.000Z",
+        "endDate": "2024-09-16T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f000000000000100A",
+        "projectId": "675a1d2f0000000000000010",
+        "type": "Ustawę przekazano Prezydentowi do podpisu",
+        "isActive": false,
+        "startDate": "2024-09-18T00:00:00.000Z",
+        "endDate": "2024-09-25T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f000000000000100B",
+        "projectId": "675a1d2f0000000000000010",
+        "type": "Podpisanie ustawy przez Prezydenta",
+        "isActive": false,
+        "startDate": "2024-09-26T00:00:00.000Z",
+        "endDate": "2024-09-27T00:00:00.000Z"
+      },
+      {
+        "_id": "675a1d2f000000000000100C",
+        "projectId": "675a1d2f0000000000000010",
+        "type": "Ogłoszenie ustawy",
+        "isActive": false,
+        "startDate": "2024-09-30T00:00:00.000Z",
+        "endDate": "2024-10-01T00:00:00.000Z"
+      }
+    ],
+    "createdAt": "2024-03-01T09:00:00.000Z",
+    "updatedAt": "2024-10-01T11:30:00.000Z"
+  }
+]

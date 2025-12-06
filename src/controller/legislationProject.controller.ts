@@ -32,6 +32,11 @@ export class LegislationProjectController {
     res.status(204).send();
   }
 
+  static async removeAll(req: Request, res: Response) {
+    await LegislationProjectService.deleteAll();
+    res.status(204).send();
+  }
+
   static async addStep(req: Request, res: Response) {
     const project = await LegislationProjectService.addStep(req.params.id, req.body);
     res.json(project);

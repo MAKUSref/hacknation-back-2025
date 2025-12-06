@@ -9,6 +9,7 @@ router.get("/:id", errorHandler(LegislationProjectController.getById));
 router.post("/", errorHandler(LegislationProjectController.create));
 router.post("/bulk", errorHandler(LegislationProjectController.createMany));
 router.put("/:id", errorHandler(LegislationProjectController.update));
+router.delete("/", errorHandler(LegislationProjectController.removeAll));
 router.delete("/:id", errorHandler(LegislationProjectController.remove));
 
 // Zarządzanie krokami

@@ -1,0 +1,416 @@
+{
+  "info": {
+    "_postman_id": "hacknation-2025-api",
+    "name": "Hacknation Backend 2025",
+    "description": "API collection for Hacknation Backend with mObywatel auth, Users, and Legislation Projects",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/health-check",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "health-check"]
+        }
+      }
+    },
+    {
+      "name": "Auth - mObywatel",
+      "item": [
+        {
+          "name": "Get SAML Metadata",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/auth/mobywatel/metadata",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "auth", "mobywatel", "metadata"]
+            }
+          }
+        },
+        {
+          "name": "Login (Browser)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/auth/mobywatel/login",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "auth", "mobywatel", "login"]
+            },
+            "description": "Opens in browser - redirects to login.gov.pl"
+          }
+        },
+        {
+          "name": "Get Current User",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwtToken}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/auth/mobywatel/me",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "auth", "mobywatel", "me"]
+            }
+          }
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/auth/mobywatel/logout",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "auth", "mobywatel", "logout"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "Get All Users",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwtToken}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/user",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "user"]
+            }
+          }
+        },
+        {
+          "name": "Get User by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwtToken}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/user/{{userId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "user", "{{userId}}"]
+            }
+          }
+        },
+        {
+          "name": "Create User",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwtToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"displayName\": \"Jan Kowalski\",\n  \"email\": \"jan@example.com\",\n  \"firstName\": \"Jan\",\n  \"lastName\": \"Kowalski\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/user",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "user"]
+            }
+          }
+        },
+        {
+          "name": "Update User",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwtToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"displayName\": \"Jan Nowak\",\n  \"email\": \"jan.nowak@example.com\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/user/{{userId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "user", "{{userId}}"]
+            }
+          }
+        },
+        {
+          "name": "Delete User",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwtToken}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/user/{{userId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "user", "{{userId}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Legislation Projects",
+      "item": [
+        {
+          "name": "Get All Projects",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwtToken}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/legislation",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "legislation"]
+            }
+          }
+        },
+        {
+          "name": "Get Project by ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwtToken}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/legislation/{{projectId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "legislation", "{{projectId}}"]
+            }
+          }
+        },
+        {
+          "name": "Create Project",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwtToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Ustawa o cyfryzacji usług publicznych\",\n  \"description\": \"Pakiet ułatwień dla e-usług i identyfikacji elektronicznej.\",\n  \"tags\": [\"cyfryzacja\", \"e-usługi\", \"dane osobowe\"],\n  \"steps\": [\n    {\n      \"type\": \"Pomysł na projekt ustawy\",\n      \"isActive\": false,\n      \"startDate\": \"2024-11-01T00:00:00.000Z\",\n      \"endDate\": \"2024-11-15T00:00:00.000Z\"\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/legislation",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "legislation"]
+            }
+          }
+        },
+        {
+          "name": "Bulk Create Projects",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwtToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n  {\n    \"title\": \"Ustawa o cyfryzacji usług publicznych\",\n    \"description\": \"Pakiet ułatwień dla e-usług i identyfikacji elektronicznej.\",\n    \"tags\": [\"cyfryzacja\", \"e-usługi\"],\n    \"steps\": []\n  },\n  {\n    \"title\": \"Nowelizacja prawa energetycznego\",\n    \"description\": \"Implementacja dyrektywy UE dot. OZE i magazynowania energii.\",\n    \"tags\": [\"energetyka\", \"ochrona środowiska\"],\n    \"steps\": []\n  },\n  {\n    \"title\": \"Ustawa o transporcie publicznym\",\n    \"description\": \"Finansowanie zeroemisyjnego taboru i infrastruktury przesiadkowej.\",\n    \"tags\": [\"transport\", \"ochrona środowiska\"],\n    \"steps\": []\n  }\n]"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/legislation/bulk",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "legislation", "bulk"]
+            }
+          }
+        },
+        {
+          "name": "Update Project",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwtToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Ustawa o cyfryzacji usług publicznych (zmieniona)\",\n  \"description\": \"Zaktualizowany opis\",\n  \"tags\": [\"cyfryzacja\", \"e-usługi\", \"dane osobowe\", \"compliance\"]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/legislation/{{projectId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "legislation", "{{projectId}}"]
+            }
+          }
+        },
+        {
+          "name": "Delete Project",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwtToken}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/legislation/{{projectId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "legislation", "{{projectId}}"]
+            }
+          }
+        },
+        {
+          "name": "Add Step to Project",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwtToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"I czytanie na posiedzeniu Sejmu\",\n  \"isActive\": true,\n  \"startDate\": \"2024-12-01T00:00:00.000Z\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/legislation/{{projectId}}/steps",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "legislation", "{{projectId}}", "steps"]
+            }
+          }
+        },
+        {
+          "name": "Set Step Active Status",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwtToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"isActive\": true\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/legislation/{{projectId}}/steps/{{stepId}}/active",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "legislation", "{{projectId}}", "steps", "{{stepId}}", "active"]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    },
+    {
+      "key": "jwtToken",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "userId",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "projectId",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "stepId",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}
