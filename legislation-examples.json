@@ -3,6 +3,7 @@
     "_id": "675a1d2f0000000000000001",
     "title": "Ustawa o cyfryzacji usług publicznych",
     "description": "Pakiet ułatwień dla e-usług i identyfikacji elektronicznej w administracji publicznej.",
+    "applicant": "Rząd",
     "tags": ["dane osobowe", "compliance", "postępowania administracyjne"],
     "steps": [
       {
@@ -36,6 +37,7 @@
     "_id": "675a1d2f0000000000000002",
     "title": "Nowelizacja prawa energetycznego",
     "description": "Implementacja dyrektywy UE dot. OZE i magazynowania energii. Zmiana warunków przyłączenia do sieci elektrycznej.",
+    "applicant": "Rząd",
     "tags": ["energetyka", "ochrona środowiska", "compliance"],
     "steps": [
       {
@@ -77,6 +79,7 @@
     "_id": "675a1d2f0000000000000003",
     "title": "Ustawa o transporcie publicznym",
     "description": "Finansowanie zeroemisyjnego taboru i infrastruktury przesiadkowej. Zmiana systemu dofinansowania gmin.",
+    "applicant": "Rząd",
     "tags": ["ochrona środowiska", "postępowania administracyjne"],
     "steps": [
       {
@@ -167,6 +170,7 @@
     "_id": "675a1d2f0000000000000004",
     "title": "Ustawa o podatku od sprzedaży detalicznej",
     "description": "Nowy podatek od handlu detalicznego powyżej 100 mln zł przychodu. Zmiana stawek VAT na produkty spożywcze.",
+    "applicant": "Rząd",
     "tags": ["podatki", "przedsiębiorcy"],
     "steps": [
       {
@@ -193,6 +197,7 @@
     "_id": "675a1d2f0000000000000005",
     "title": "Ustawa o ochronie zwierząt",
     "description": "Nowe wymogi dotyczące hodowli zwierząt, zakaz hodowli na futerko. Wzmocnienie kar za znęcanie się nad zwierzętami.",
+    "applicant": "Rząd",
     "tags": ["ochrona środowiska", "przedsiębiorcy"],
     "steps": [
       {
@@ -291,6 +296,7 @@
     "_id": "675a1d2f0000000000000006",
     "title": "Ustawa o cyberbezpieczeństwie infrastruktury krytycznej",
     "description": "Wdrożenie dyrektywy NIS2. Nowe obowiązki operatorów usług kluczowych w zakresie ochrony systemów informatycznych i raportowania incydentów.",
+    "applicant": "Rząd",
     "tags": ["compliance", "dane osobowe", "przedsiębiorcy"],
     "steps": [
       {
@@ -316,6 +322,7 @@
     "_id": "675a1d2f0000000000000007",
     "title": "Nowelizacja Kodeksu postępowania administracyjnego",
     "description": "Usprawnienie procedur administracyjnych, rozszerzenie zasady domniemania prawdziwości oświadczeń, cyfryzacja dokumentacji.",
+    "applicant": "Rząd",
     "tags": ["postępowania administracyjne", "compliance"],
     "steps": [
       {
@@ -365,6 +372,7 @@
     "_id": "675a1d2f0000000000000008",
     "title": "Ustawa o wspieraniu budownictwa mieszkaniowego",
     "description": "Program ulg podatkowych dla deweloperów budujących mieszkania na wynajem. Uproszczenie procedur związanych z uzyskaniem pozwoleń na budowę.",
+    "applicant": "Rząd",
     "tags": ["budownictwo", "podatki", "postępowania administracyjne"],
     "steps": [
       {
@@ -471,6 +479,7 @@
     "_id": "675a1d2f0000000000000009",
     "title": "Ustawa o obrocie prawami majątkowymi do utworów sztucznej inteligencji",
     "description": "Regulacja praw autorskich do dzieł tworzonych przez systemy AI. Określenie odpowiedzialności za treści generowane automatycznie.",
+    "applicant": "Rząd",
     "tags": ["compliance", "przedsiębiorcy", "reklama"],
     "steps": [
       {
@@ -512,6 +521,7 @@
     "_id": "675a1d2f0000000000000010",
     "title": "Ustawa o zmianie ustawy o systemie oświaty",
     "description": "Wprowadzenie obowiązkowej edukacji finansowej w szkołach podstawowych i ponadpodstawowych. Nowe standardy kształcenia w zakresie przedsiębiorczości.",
+    "applicant": "Rząd",
     "tags": ["oświata", "przedsiębiorcy"],
     "steps": [
       {

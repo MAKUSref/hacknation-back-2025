@@ -1,21 +1,7 @@
 import mongoose, { Schema, Document } from "mongoose";
 
 
-interface iLegistlationProject {
-  id: string;
-  title: string;
-  description: string;
-  steps: iLegistlationStep[];
-}
 
-interface iLegistlationStep {
-  id: string;
-  projectId: string;
-  type: LegislativeProcessStep;
-  isActive: boolean;
-  startDate: Date;
-  endDate?: Date;
-}
 
 export enum LegislativeProcessStep {
   PROJECT_IDEA = "Pomysł na projekt ustawy",
@@ -59,6 +45,7 @@ export interface ILegislationProject extends Document {
   description: string;
   steps: ILegislationStep[];
   tags?: LegislationTag[];
+  applicant: Applicant;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -91,6 +78,14 @@ export enum LegislationTag {
   ZAMOWIENIA_PUBLICZNE = "zamówienia publiczne"
 }
 
+enum Applicant{
+  RZAD = "Rząd",
+  POSLOWIE = "Posłowie",
+  SENAT = "Senat",
+  PREZYDENT = "Prezydent",
+  OBYWATELE = "Obywatele"
+}
+
 const LegislationStepSchema = new Schema<ILegislationStep>(
   {
     projectId: { type: String },
@@ -114,6 +109,11 @@ const LegislationProjectSchema = new Schema<ILegislationProject>(
     tags: {
       type: [{ type: String, enum: Object.values(LegislationTag) }],
       default: [],
+    },
+    applicant: {
+      type: String,
+      enum: Object.values(Applicant),
+      required: true,
     },
   },
   { timestamps: true }
