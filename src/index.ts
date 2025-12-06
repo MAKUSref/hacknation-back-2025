@@ -1,7 +1,7 @@
 import "module-alias/register";
 import express from "express";
 import { config, connectToMongo } from "./config/config";
-// import authRouter from "./route/auth.route";
+import authRouter from "./route/auth.route";
 import userRouter from "./route/user.route";
 import cors from "cors";
 import Logger from "./config/logger";
@@ -21,7 +21,7 @@ connectToMongo()
     Logger.error("Error connecting to MongoDB");
   });
 
-// app.use("/api/auth", authRouter);
+app.use("/api/auth", authRouter);
 
 app.use("/api/user", userRouter);
 
