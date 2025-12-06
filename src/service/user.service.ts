@@ -45,4 +45,43 @@ export class UserService {
       throw new AppError("User not found", HTTP_STATUS_CODE.NOT_FOUND);
     }
   }
+
+  static async getWatchedProjects(userId: string): Promise<IUser> {
+    const user = await User.findById(userId).populate("watchedProjects");
+    if (!user) {
+      throw new AppError("User not found", HTTP_STATUS_CODE.NOT_FOUND);
+    }
+    return user;
+  }
+
+  static async addToWatch(userId: string, projectId: string): Promise<IUser> {
+    const user = await User.findById(userId);
+    if (!user) {
+      throw new AppError("User not found", HTTP_STATUS_CODE.NOT_FOUND);
+    }
+
+    if (user.watchedProjects.includes(projectId as any)) {
+      throw new AppError(
+        "Project already in watch list",
+        HTTP_STATUS_CODE.BAD_REQUEST
+      );
+    }
+
+    user.watchedProjects.push(projectId as any);
+    await user.save();
+    return user;
+  }
+
+  static async removeFromWatched(userId: string, projectId: string): Promise<IUser> {
+    const user = await User.findById(userId);
+    if (!user) {
+      throw new AppError("User not found", HTTP_STATUS_CODE.NOT_FOUND);
+    }
+
+    user.watchedProjects = user.watchedProjects.filter(
+      (id) => id.toString() !== projectId
+    );
+    await user.save();
+    return user;
+  }
 }

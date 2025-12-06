@@ -188,6 +188,78 @@
               "path": ["api", "user", "{{userId}}"]
             }
           }
+        },
+        {
+          "name": "Get Watched Projects",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwtToken}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/user/{{userId}}/watched",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "user", "{{userId}}", "watched"]
+            }
+          }
+        },
+        {
+          "name": "Add Project to Watch List",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwtToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"projectId\": \"{{projectId}}\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/user/{{userId}}/watch",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "user", "{{userId}}", "watch"]
+            }
+          }
+        },
+        {
+          "name": "Remove Project from Watch List",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{jwtToken}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"projectId\": \"{{projectId}}\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/user/{{userId}}/watch",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "user", "{{userId}}", "watch"]
+            }
+          }
         }
       ]
     },

@@ -31,4 +31,24 @@ export class UserController {
     await UserService.deleteUser(id);
     res.status(204).send();
   }
+
+  static async getWatchedProjects(req: Request, res: Response) {
+    const { id } = req.params;
+    const user = await UserService.getWatchedProjects(id);
+    res.json(user.watchedProjects);
+  }
+
+  static async addToWatch(req: Request, res: Response) {
+    const { id } = req.params;
+    const { projectId } = req.body;
+    const user = await UserService.addToWatch(id, projectId);
+    res.json(user);
+  }
+
+  static async removeFromWatched(req: Request, res: Response) {
+    const { id } = req.params;
+    const { projectId } = req.body;
+    const user = await UserService.removeFromWatched(id, projectId);
+    res.json(user);
+  }
 }
