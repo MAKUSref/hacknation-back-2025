@@ -6,14 +6,16 @@ import { AppError } from "../exception/AppError";
 import { HTTP_STATUS_CODE } from "../exception/http";
 
 export class LegislationProjectService {
-  static async create(data: Pick<ILegislationProject, "title" | "description" | "steps">) {
+  static async create(
+    data: Pick<ILegislationProject, "title" | "description" | "steps" | "tags">
+  ) {
     const project = new LegislationProject(data);
     await project.save();
     return project;
   }
 
   static async createMany(
-    items: Array<Pick<ILegislationProject, "title" | "description" | "steps">>
+    items: Array<Pick<ILegislationProject, "title" | "description" | "steps" | "tags">>
   ) {
     const projects = await LegislationProject.insertMany(items);
     return projects;
@@ -33,7 +35,9 @@ export class LegislationProjectService {
 
   static async update(
     id: string,
-    data: Partial<Pick<ILegislationProject, "title" | "description" | "steps">>
+    data: Partial<
+      Pick<ILegislationProject, "title" | "description" | "steps" | "tags">
+    >
   ) {
     const project = await LegislationProject.findByIdAndUpdate(id, data, {
       new: true,
