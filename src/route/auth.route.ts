@@ -7,5 +7,6 @@ import { config } from "../config/config";
 const router = Router();
 
 router.post("/login", errorHandler(AuthController.login));
+router.get("/me", errorHandler(AuthController.me));
 
 export default router;
