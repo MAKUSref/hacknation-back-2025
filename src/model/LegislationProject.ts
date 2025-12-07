@@ -29,6 +29,8 @@ const LegislationProjectSchema = new Schema<ILegislationProject>(
       default: [],
     },
     text: { type: String, default: "" },
+    issue: { type: String, default: "" },
+    solution: { type: String, default: "" },
     applicant: {
       type: String,
       enum: Object.values(Applicant),

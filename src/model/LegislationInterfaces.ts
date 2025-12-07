@@ -114,6 +114,8 @@ export interface ILegislationProject extends Document {
   steps: ILegislationStep[];
   tags?: LegislationTag[];
   text: string;
+  issue: string;
+  solution: string;
   applicant: Applicant;
   createdAt: Date;
   updatedAt: Date;

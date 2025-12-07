@@ -70,4 +70,10 @@ export class UserController {
     const user = await UserService.removeFromWatched(userInfo.userId, projectId);
     res.json(user);
   }
+
+  static async registerUserIfNotExists(req: Request, res: Response) {
+    const { displayName, email } = req.body;
+    const user = await UserService.registerUserIfNotExists(displayName, email);
+    res.status(200).json(user);
+  }
 }

@@ -84,4 +84,13 @@ export class UserService {
     await user.save();
     return user;
   }
+
+  static async registerUserIfNotExists(displayName: string, email: string): Promise<IUser> {
+    let user = await User.findOne({ email });
+    if (!user) {
+      user = new User({displayName: displayName || email, email});
+      await user.save();
+    } 
+    return user;
+  }
 }

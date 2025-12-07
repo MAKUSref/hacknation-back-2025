@@ -12,6 +12,8 @@ router.post("/", errorHandler(UserController.createUser));
 router.put("/:id", errorHandler(UserController.updateUser));
 router.delete("/:id", errorHandler(UserController.deleteUser));
 
+router.post("/register", errorHandler(UserController.registerUserIfNotExists));
+
 // Watched projects routes
 router.get("/watch/me", errorHandler(UserController.getWatchedProjects));
 router.post("/watch/me", errorHandler(UserController.addToWatch));
