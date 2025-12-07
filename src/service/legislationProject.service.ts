@@ -3,6 +3,8 @@ import { AppError } from "../exception/AppError";
 import { HTTP_STATUS_CODE } from "../exception/http";
 import { ILegislationProject, ILegislationStep } from "../model/LegislationInterfaces";
 import { ILegislationStepsInfo, LegislationStepsInfo } from "../model/LegistlationStepsInfo";
+import { genAI } from "../config/gemini";
+
 
 export class LegislationProjectService {
   static async create(data: Pick<ILegislationProject, "title" | "description" | "steps" | "tags">) {

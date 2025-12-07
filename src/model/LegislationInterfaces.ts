@@ -105,6 +105,7 @@ export interface ILegislationStep {
   isOmitted?: boolean;
   startDate: Date;
   endDate?: Date;
+  text?: string;
 }
 
 export interface ILegislationProject extends Document {
@@ -112,6 +113,7 @@ export interface ILegislationProject extends Document {
   description: string;
   steps: ILegislationStep[];
   tags?: LegislationTag[];
+  text: string;
   applicant: Applicant;
   createdAt: Date;
   updatedAt: Date;

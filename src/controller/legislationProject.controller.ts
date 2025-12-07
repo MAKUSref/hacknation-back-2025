@@ -75,4 +75,6 @@ export class LegislationProjectController {
     await LegislationProjectService.removeAllStepInfo();
     res.status(204).send();
   }
+
+
 }

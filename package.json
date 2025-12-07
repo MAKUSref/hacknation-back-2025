@@ -37,6 +37,7 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "auth": "^1.2.3",
     "chalk": "^5.6.2",
     "dotenv": "^17.2.3",
