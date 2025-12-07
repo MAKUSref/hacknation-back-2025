@@ -1,0 +1,219 @@
+[
+
+  {
+    "id": 0,
+    "name": "Zgłoszenia lobbingowe",
+    "place": "PRE_SEJM",
+    "description": "Zgłoszenie przez grupy posłów zamiaru wniesienia projektu ustawy."
+  },
+  {
+    "id": 1,
+    "name": "Uzgodnienia",
+    "place": "PRE_SEJM",
+    "description": "Uzgodnienia projektu ustawy z odpowiednimi organami i instytucjami."
+  },
+  {
+    "id": 2,
+    "name": "Konsultacje publiczne",
+    "place": "PRE_SEJM",
+    "description": "Prowadzenie konsultacji publicznych dotyczących projektu ustawy."
+  },
+  {
+    "id": 3,
+    "name": "Opiniowanie",
+    "place": "PRE_SEJM",
+    "description": "Opiniowanie projektu przez właściwe organy."
+  },
+  {
+    "id": 4,
+    "name": "Komitet Rady Ministrów do Spraw Cyfryzacji",
+    "place": "PRE_SEJM",
+    "description": "Rozpatrzenie projektu przez Komitet Rady Ministrów do Spraw Cyfryzacji."
+  },
+  {
+    "id": 5,
+    "name": "Komitet do Spraw Europejskich",
+    "place": "PRE_SEJM",
+    "description": "Rozpatrzenie projektu przez Komitet do Spraw Europejskich."
+  },
+  {
+    "id": 6,
+    "name": "Komitet Społeczny Rady Ministrów",
+    "place": "PRE_SEJM",
+    "description": "Rozpatrzenie projektu przez Komitet Społeczny Rady Ministrów."
+  },
+  {
+    "id": 7,
+    "name": "Komitet Ekonomiczny Rady Ministrów",
+    "place": "PRE_SEJM",
+    "description": "Rozpatrzenie projektu przez Komitet Ekonomiczny Rady Ministrów."
+  },
+  {
+    "id": 8,
+    "name": "Stały Komitet Rady Ministrów",
+    "place": "PRE_SEJM",
+    "description": "Rozpatrzenie projektu przez Stały Komitet Rady Ministrów."
+  },
+  {
+    "id": 9,
+    "name": "Komisja Prawnicza",
+    "place": "PRE_SEJM",
+    "description": "Opiniowanie projektu przez Komisję Prawniczą."
+  },
+  {
+    "id": 10,
+    "name": "Potwierdzenie projektu przez Stały Komitet Rady Ministrów",
+    "place": "PRE_SEJM",
+    "description": "Potwierdzenie projektu ustawy przez Stały Komitet Rady Ministrów."
+  },
+  {
+    "id": 11,
+    "name": "Rada Ministrów",
+    "place": "PRE_SEJM",
+    "description": "Uchwała Rady Ministrów w sprawie projektu ustawy."
+  },
+  {
+    "id": 12,
+    "name": "Notyfikacja",
+    "place": "PRE_SEJM",
+    "description": "Notyfikacja projektu w przypadku przepisów technicznych."
+  },
+  {
+    "id": 13,
+    "name": "Projekt wpłynął do Sejmu",
+    "place": "SEJM",
+    "description": "Wpłynięcie projektu ustawy do Sejmu."
+  },
+  {
+    "id": 14,
+    "name": "Skierowano do I czytania na posiedzeniu Sejmu",
+    "place": "SEJM",
+    "description": "Skierowanie projektu do I czytania na posiedzeniu plenarnym Sejmu."
+  },
+  {
+    "id": 15,
+    "name": "Skierowano do I czytania w komisjach",
+    "place": "SEJM",
+    "description": "Skierowanie projektu do I czytania w komisjach sejmowych."
+  },
+  {
+    "id": 16,
+    "name": "I czytanie na posiedzeniu Sejmu",
+    "place": "SEJM",
+    "description": "I czytanie projektu na posiedzeniu plenarnym Sejmu."
+  },
+  {
+    "id": 17,
+    "name": "II czytanie na posiedzeniu Sejmu",
+    "place": "SEJM",
+    "description": "II czytanie projektu na posiedzeniu plenarnym Sejmu."
+  },
+  {
+    "id": 18,
+    "name": "III czytanie na posiedzeniu Sejmu",
+    "place": "SEJM",
+    "description": "III czytanie projektu na posiedzeniu plenarnym Sejmu."
+  },
+  {
+    "id": 19,
+    "name": "I czytanie w komisjach",
+    "place": "SEJM",
+    "description": "I czytanie projektu w komisjach sejmowych."
+  },
+  {
+    "id": 20,
+    "name": "Praca w komisjach po czytaniu",
+    "place": "SEJM",
+    "description": "Praca nad projektem w komisjach sejmowych."
+  },
+  {
+    "id": 21,
+    "name": "Sprawozdanie podkomisji",
+    "place": "SEJM",
+    "description": "Sprawozdanie podkomisji sejmowej dotyczące projektu."
+  },
+  {
+    "id": 22,
+    "name": "Sprawozdanie komisji",
+    "place": "SEJM",
+    "description": "Sprawozdanie komisji sejmowej dotyczące projektu."
+  },
+  {
+    "id": 23,
+    "name": "Głosowanie",
+    "place": "SEJM",
+    "description": "Głosowanie nad projektem w Sejmie."
+  },
+  {
+    "id": 24,
+    "name": "Stanowisko Senatu",
+    "place": "SENAT",
+    "description": "Stanowisko Senatu w sprawie uchwalonych zmian."
+  },
+  {
+    "id": 25,
+    "name": "Praca w komisjach nad stanowiskiem Senatu",
+    "place": "SEJM",
+    "description": "Praca komisji sejmowych nad stanowiskiem Senatu."
+  },
+  {
+    "id": 26,
+    "name": "Rozpatrywanie stanowiska Senatu na forum Sejmu",
+    "place": "SEJM",
+    "description": "Rozpatrywanie stanowiska Senatu na posiedzeniu plenarnym Sejmu."
+  },
+  {
+    "id": 27,
+    "name": "Ustawę przekazano Prezydentowi do podpisu",
+    "place": "PREZYDENT",
+    "description": "Przekazanie uchwalnej ustawy Prezydentowi RP do podpisu."
+  },
+  {
+    "id": 28,
+    "name": "Prezydent skierował do TK",
+    "place": "PREZYDENT",
+    "description": "Skierowanie ustawy przez Prezydenta do Trybunału Konstytucyjnego."
+  },
+  {
+    "id": 29,
+    "name": "Wyrok TK",
+    "place": "PREZYDENT",
+    "description": "Wydanie wyroku przez Trybunał Konstytucyjny."
+  },
+  {
+    "id": 30,
+    "name": "Wniosek Prezydenta - VETO",
+    "place": "PREZYDENT",
+    "description": "Złożenie sprzeciwu przez Prezydenta (VETO)."
+  },
+  {
+    "id": 31,
+    "name": "Wniosek Prezydenta o usunięcie niezgodności",
+    "place": "PREZYDENT",
+    "description": "Złożenie wniosku przez Prezydenta o usunięcie niezgodności."
+  },
+  {
+    "id": 32,
+    "name": "Rozpatrywanie wniosku Prezydenta",
+    "place": "SEJM",
+    "description": "Rozpatrywanie wniosku Prezydenta w Sejmie."
+  },
+  {
+    "id": 33,
+    "name": "Rozpatrywanie sprawozdania komisji w sprawie usunięcia niezgodności",
+    "place": "SEJM",
+    "description": "Rozpatrywanie sprawozdania komisji dotyczącego usunięcia niezgodności."
+  },
+  {
+    "id": 34,
+    "name": "Podpisanie ustawy przez Prezydenta",
+    "place": "PREZYDENT",
+    "description": "Podpisanie ustawy przez Prezydenta RP."
+  },
+  {
+    "id": 35,
+    "name": "Ogłoszenie ustawy",
+    "place": "UKONCZONE",
+    "description": "Ogłoszenie ustawy w Dzienniku Ustaw."
+  }
+]

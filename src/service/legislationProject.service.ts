@@ -2,11 +2,10 @@ import LegislationProject from "../model/LegislationProject";
 import { AppError } from "../exception/AppError";
 import { HTTP_STATUS_CODE } from "../exception/http";
 import { ILegislationProject, ILegislationStep } from "../model/LegislationInterfaces";
+import { ILegislationStepsInfo, LegislationStepsInfo } from "../model/LegistlationStepsInfo";
 
 export class LegislationProjectService {
-  static async create(
-    data: Pick<ILegislationProject, "title" | "description" | "steps" | "tags">
-  ) {
+  static async create(data: Pick<ILegislationProject, "title" | "description" | "steps" | "tags">) {
     const project = new LegislationProject(data);
     await project.save();
     return project;
@@ -33,9 +32,7 @@ export class LegislationProjectService {
 
   static async update(
     id: string,
-    data: Partial<
-      Pick<ILegislationProject, "title" | "description" | "steps" | "tags">
-    >
+    data: Partial<Pick<ILegislationProject, "title" | "description" | "steps" | "tags">>
   ) {
     const project = await LegislationProject.findByIdAndUpdate(id, data, {
       new: true,
@@ -77,5 +74,27 @@ export class LegislationProjectService {
       throw new AppError("Project or step not found", HTTP_STATUS_CODE.NOT_FOUND);
     }
     return project;
+  }
+
+  static async addStepInfo(step: ILegislationStepsInfo) {
+    LegislationStepsInfo.create(step);
+    return step;
+  }
+
+  static async addBulkStepInfo(steps: ILegislationStepsInfo[]) {
+    LegislationStepsInfo.insertMany(steps);
+    return steps;
+  }
+
+  static async getAllStepInfo() {
+    return LegislationStepsInfo.find();
+  }
+
+  static async getStepInfoById(id: number) {
+    const stepInfo = await LegislationStepsInfo.findOne({ id });
+    if (!stepInfo) {
+      throw new AppError("Step info not found", HTTP_STATUS_CODE.NOT_FOUND);
+    }
+    return stepInfo;
   }
 }

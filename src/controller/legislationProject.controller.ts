@@ -50,4 +50,24 @@ export class LegislationProjectController {
     );
     res.json(project);
   }
+
+  static async addStepInfo(req: Request, res: Response) {
+    const stepInfo = await LegislationProjectService.addStepInfo(req.body);
+    res.status(201).json(stepInfo);
+  }
+
+  static async addBulkStepInfo(req: Request, res: Response) {
+    const stepInfos = await LegislationProjectService.addBulkStepInfo(req.body);
+    res.status(201).json(stepInfos);
+  }
+
+  static async getAllStepInfo(req: Request, res: Response) {
+    const stepInfos = await LegislationProjectService.getAllStepInfo();
+    res.json(stepInfos);
+  }
+
+  static async getStepInfoById(req: Request, res: Response) {
+    const stepInfo = await LegislationProjectService.getStepInfoById(Number(req.params.id));
+    res.json(stepInfo);
+  }
 }

@@ -9,7 +9,7 @@ import {
 
 const LegislationStepSchema = new Schema<ILegislationStep>(
   {
-    type: { type: String, enum: Object.values(LegislativeProcessStep), required: true },
+    type: { type: Number, enum: Object.values(LegislativeProcessStep), required: true },
     startDate: { type: Date, required: true },
     endDate: { type: Date },
     isActive: { type: Boolean, default: false },

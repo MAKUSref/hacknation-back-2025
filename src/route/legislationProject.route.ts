@@ -19,4 +19,9 @@ router.patch(
   errorHandler(LegislationProjectController.setStepActive)
 );
 
+router.get("/steps-info", errorHandler(LegislationProjectController.getAllStepInfo));
+router.get("/steps-info/:id", errorHandler(LegislationProjectController.getStepInfoById));
+router.post("/steps-info", errorHandler(LegislationProjectController.addStepInfo));
+router.post("/steps-info/bulk", errorHandler(LegislationProjectController.addBulkStepInfo));
+
 export default router;
