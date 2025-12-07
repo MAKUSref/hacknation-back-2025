@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
 import { UserService } from "../service/user.service";
-import { log } from "console";
-import Logger from "../config/logger";
+import { AuthService } from "../service/auth.service";
 
 export class UserController {
   static async getAllUsers(req: Request, res: Response) {
@@ -35,28 +34,40 @@ export class UserController {
   }
 
   static async getWatchedProjects(req: Request, res: Response) {
-    // const { id } = req.params;
-    const id = "693495ef5f2b4db734263314";
-    Logger.info('Fetching watched projects for user:' + id);
-    const user = await UserService.getWatchedProjects(id);
-    Logger.info(user);
+    const authHeader = req.headers.authorization;
+    if (!authHeader || !authHeader.startsWith("Bearer ")) {
+      throw new Error("No bearer token provided");
+    }
+    const token = authHeader.split(" ")[1];
+
+    const userInfo = await AuthService.getUserInfo(token);
+    const user = await UserService.getWatchedProjects(userInfo.userId);
     res.json(user.watchedProjects);
   }
 
   static async addToWatch(req: Request, res: Response) {
-    // const { id } = req.params;
-    const id = "693495ef5f2b4db734263314";
+    const authHeader = req.headers.authorization;
+    if (!authHeader || !authHeader.startsWith("Bearer ")) {
+      throw new Error("No bearer token provided");
+    }
+    const token = authHeader.split(" ")[1];
+
+    const userInfo = await AuthService.getUserInfo(token);
     const { projectId } = req.body;
-    Logger.info(`Adding project ${projectId} to watched list for user ${id}`);
-    const user = await UserService.addToWatch(id, projectId);
+    const user = await UserService.addToWatch(userInfo.userId, projectId);
     res.json(user);
   }
 
   static async removeFromWatched(req: Request, res: Response) {
-    // const { id } = req.params;
-    const id = "693495ef5f2b4db734263314";
+    const authHeader = req.headers.authorization;
+    if (!authHeader || !authHeader.startsWith("Bearer ")) {
+      throw new Error("No bearer token provided");
+    }
+    const token = authHeader.split(" ")[1];
+
+    const userInfo = await AuthService.getUserInfo(token);
     const { projectId } = req.body;
-    const user = await UserService.removeFromWatched(id, projectId);
+    const user = await UserService.removeFromWatched(userInfo.userId, projectId);
     res.json(user);
   }
 }
