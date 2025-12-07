@@ -66,8 +66,8 @@ export class LegislationProjectController {
     res.json(stepInfos);
   }
 
-  static async getStepInfoById(req: Request, res: Response) {
-    const stepInfo = await LegislationProjectService.getStepInfoById(Number(req.params.id));
+  static async getStepInfoByIndex(req: Request, res: Response) {
+    const stepInfo = await LegislationProjectService.getStepInfoByIndex(Number(req.params.id));
     res.json(stepInfo);
   }
 

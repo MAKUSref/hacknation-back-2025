@@ -1,10 +1,12 @@
 import { Request, Response } from "express";
 import { UserService } from "../service/user.service";
+import { log } from "console";
+import Logger from "../config/logger";
 
 export class UserController {
   static async getAllUsers(req: Request, res: Response) {
     const users = await UserService.getAllUsers();
-    res.json(users);
+    res.json(users[0]);
   }
 
   static async getUserById(req: Request, res: Response) {
@@ -35,7 +37,9 @@ export class UserController {
   static async getWatchedProjects(req: Request, res: Response) {
     // const { id } = req.params;
     const id = "693495ef5f2b4db734263314";
+    Logger.info('Fetching watched projects for user:' + id);
     const user = await UserService.getWatchedProjects(id);
+    Logger.info(user);
     res.json(user.watchedProjects);
   }
 
@@ -43,6 +47,7 @@ export class UserController {
     // const { id } = req.params;
     const id = "693495ef5f2b4db734263314";
     const { projectId } = req.body;
+    Logger.info(`Adding project ${projectId} to watched list for user ${id}`);
     const user = await UserService.addToWatch(id, projectId);
     res.json(user);
   }

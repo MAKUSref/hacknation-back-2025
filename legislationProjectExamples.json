@@ -1,0 +1,300 @@
+[
+	{
+		"_id": "675a1d2f00000000000000a1",
+		"title": "Ustawa o cyfryzacji usług publicznych",
+		"description": "Pakiet ułatwień dla e-usług i identyfikacji elektronicznej w administracji publicznej.",
+		"applicant": "Rząd",
+		"tags": ["dane osobowe", "compliance", "postępowania administracyjne"],
+		"steps": [
+			{
+				"_id": "675a1d2f0000000000000a11",
+				"type": 0,
+				"isActive": false,
+				"isBlocked": false,
+				"startDate": "2024-09-20T00:00:00.000Z",
+				"endDate": "2024-10-01T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000a12",
+				"type": 1,
+				"isActive": false,
+				"startDate": "2024-11-01T00:00:00.000Z",
+				"endDate": "2024-11-14T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000a13",
+				"type": 2,
+				"isActive": true,
+				"startDate": "2024-11-20T00:00:00.000Z"
+			}
+		],
+		"createdAt": "2024-09-01T10:00:00.000Z",
+		"updatedAt": "2024-11-20T09:00:00.000Z"
+	},
+	{
+		"_id": "675a1d2f00000000000000b1",
+		"title": "Nowelizacja prawa energetycznego",
+		"description": "Implementacja dyrektywy UE dotyczącej OZE oraz magazynowania energii.",
+		"applicant": "Rząd",
+		"tags": ["energetyka", "ochrona środowiska", "compliance"],
+		"steps": [
+			{
+				"_id": "675a1d2f0000000000000b11",
+				"type": 0,
+				"isActive": false,
+				"startDate": "2024-08-01T00:00:00.000Z",
+				"endDate": "2024-08-15T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000b12",
+				"type": 1,
+				"isActive": false,
+				"startDate": "2024-09-05T00:00:00.000Z",
+				"endDate": "2024-09-18T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000b13",
+				"type": 2,
+				"isActive": true,
+				"startDate": "2024-10-10T00:00:00.000Z"
+			}
+		],
+		"createdAt": "2024-08-01T09:00:00.000Z",
+		"updatedAt": "2024-10-10T08:00:00.000Z"
+	},
+	{
+		"_id": "675a1d2f00000000000000c1",
+		"title": "Ustawa o ochronie danych w sektorze zdrowia",
+		"description": "Doprecyzowanie zasad przetwarzania danych medycznych i wymiany dokumentacji elektronicznej.",
+		"applicant": "Rząd",
+		"tags": ["dane osobowe", "podmioty lecznicze", "compliance"],
+		"steps": [
+			{
+				"_id": "675a1d2f0000000000000c11",
+				"type": 0,
+				"isActive": false,
+				"startDate": "2024-06-10T00:00:00.000Z",
+				"endDate": "2024-06-25T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000c12",
+				"type": 1,
+				"isActive": false,
+				"startDate": "2024-07-05T00:00:00.000Z",
+				"endDate": "2024-07-18T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000c13",
+				"type": 2,
+				"isActive": false,
+				"startDate": "2024-08-01T00:00:00.000Z",
+				"endDate": "2024-08-12T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000c14",
+				"type": 3,
+				"isActive": true,
+				"startDate": "2024-08-20T00:00:00.000Z"
+			}
+		],
+		"createdAt": "2024-06-10T09:00:00.000Z",
+		"updatedAt": "2024-08-20T08:30:00.000Z"
+	},
+	{
+		"_id": "675a1d2f00000000000000d1",
+		"title": "Ustawa o finansowaniu transportu zeroemisyjnego",
+		"description": "System dopłat do autobusów elektrycznych i infrastruktury ładowania w miastach.",
+		"applicant": "Rząd",
+		"tags": ["ochrona środowiska", "energetyka"],
+		"steps": [
+			{
+				"_id": "675a1d2f0000000000000d11",
+				"type": 0,
+				"isActive": false,
+				"startDate": "2024-05-15T00:00:00.000Z",
+				"endDate": "2024-05-30T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000d12",
+				"type": 1,
+				"isActive": false,
+				"startDate": "2024-06-10T00:00:00.000Z",
+				"endDate": "2024-06-20T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000d13",
+				"type": 2,
+				"isActive": false,
+				"startDate": "2024-07-01T00:00:00.000Z",
+				"endDate": "2024-07-12T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000d14",
+				"type": 3,
+				"isActive": false,
+				"startDate": "2024-07-20T00:00:00.000Z",
+				"endDate": "2024-07-30T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000d15",
+				"type": 4,
+				"isActive": true,
+				"startDate": "2024-08-05T00:00:00.000Z"
+			}
+		],
+		"createdAt": "2024-05-15T09:00:00.000Z",
+		"updatedAt": "2024-08-05T10:00:00.000Z"
+	},
+	{
+		"_id": "675a1d2f00000000000000e1",
+		"title": "Ustawa o podatku od sprzedaży detalicznej",
+		"description": "Nowy podatek od handlu detalicznego powyżej określonego progu przychodu.",
+		"applicant": "Rząd",
+		"tags": ["podatki", "przedsiębiorcy"],
+		"steps": [
+			{
+				"_id": "675a1d2f0000000000000e11",
+				"type": 0,
+				"isActive": false,
+				"startDate": "2024-10-01T00:00:00.000Z",
+				"endDate": "2024-10-12T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000e12",
+				"type": 1,
+				"isActive": false,
+				"startDate": "2024-10-20T00:00:00.000Z",
+				"endDate": "2024-11-01T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000e13",
+				"type": 2,
+				"isActive": false,
+				"startDate": "2024-11-10T00:00:00.000Z",
+				"endDate": "2024-11-18T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000e14",
+				"type": 3,
+				"isActive": true,
+				"startDate": "2024-11-25T00:00:00.000Z"
+			}
+		],
+		"createdAt": "2024-10-01T11:00:00.000Z",
+		"updatedAt": "2024-11-25T09:30:00.000Z"
+	},
+	{
+		"_id": "675a1d2f00000000000000f1",
+		"title": "Ustawa o wsparciu budownictwa czynszowego",
+		"description": "Preferencje podatkowe i dopłaty dla projektów mieszkań na wynajem.",
+		"applicant": "Rząd",
+		"tags": ["budownictwo", "podatki"],
+		"steps": [
+			{
+				"_id": "675a1d2f0000000000000f11",
+				"type": 0,
+				"isActive": false,
+				"startDate": "2024-04-05T00:00:00.000Z",
+				"endDate": "2024-04-18T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000f12",
+				"type": 1,
+				"isActive": false,
+				"startDate": "2024-04-25T00:00:00.000Z",
+				"endDate": "2024-05-08T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000f13",
+				"type": 2,
+				"isActive": false,
+				"startDate": "2024-05-15T00:00:00.000Z",
+				"endDate": "2024-05-28T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000f14",
+				"type": 3,
+				"isActive": false,
+				"startDate": "2024-06-05T00:00:00.000Z",
+				"endDate": "2024-06-18T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000f15",
+				"type": 4,
+				"isActive": true,
+				"startDate": "2024-06-25T00:00:00.000Z"
+			}
+		],
+		"createdAt": "2024-04-05T09:00:00.000Z",
+		"updatedAt": "2024-06-25T10:00:00.000Z"
+	},
+	{
+		"_id": "675a1d2f0000000000000101",
+		"title": "Ustawa o cyberbezpieczeństwie infrastruktury krytycznej",
+		"description": "Wdrożenie minimalnych wymogów bezpieczeństwa i procedur reagowania dla operatorów usług kluczowych.",
+		"applicant": "Rząd",
+		"tags": ["compliance", "dane osobowe", "przedsiębiorcy"],
+		"steps": [
+			{
+				"_id": "675a1d2f0000000000000111",
+				"type": 0,
+				"isActive": false,
+				"startDate": "2024-11-01T00:00:00.000Z",
+				"endDate": "2024-11-12T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000112",
+				"type": 1,
+				"isActive": false,
+				"startDate": "2024-11-18T00:00:00.000Z",
+				"endDate": "2024-11-28T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000113",
+				"type": 2,
+				"isActive": true,
+				"startDate": "2024-12-05T00:00:00.000Z"
+			}
+		],
+		"createdAt": "2024-11-01T12:00:00.000Z",
+		"updatedAt": "2024-12-05T09:30:00.000Z"
+	},
+	{
+		"_id": "675a1d2f0000000000000111",
+		"title": "Ustawa o zmianie ustawy o systemie oświaty",
+		"description": "Wprowadzenie rozszerzonej edukacji cyfrowej i kompetencji medialnych w szkołach.",
+		"applicant": "Rząd",
+		"tags": ["oświata", "dane osobowe"],
+		"steps": [
+			{
+				"_id": "675a1d2f0000000000000121",
+				"type": 0,
+				"isActive": false,
+				"startDate": "2024-03-01T00:00:00.000Z",
+				"endDate": "2024-03-18T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000122",
+				"type": 1,
+				"isActive": false,
+				"startDate": "2024-03-25T00:00:00.000Z",
+				"endDate": "2024-04-08T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000123",
+				"type": 2,
+				"isActive": false,
+				"startDate": "2024-04-15T00:00:00.000Z",
+				"endDate": "2024-04-30T00:00:00.000Z"
+			},
+			{
+				"_id": "675a1d2f0000000000000124",
+				"type": 3,
+				"isActive": true,
+				"startDate": "2024-05-08T00:00:00.000Z"
+			}
+		],
+		"createdAt": "2024-03-01T09:00:00.000Z",
+		"updatedAt": "2024-05-08T10:15:00.000Z"
+	}
+]

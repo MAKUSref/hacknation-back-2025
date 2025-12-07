@@ -92,8 +92,8 @@ export class LegislationProjectService {
     return LegislationStepsInfo.find();
   }
 
-  static async getStepInfoById(id: number) {
-    const stepInfo = await LegislationStepsInfo.findOne({ id });
+  static async getStepInfoByIndex(index: number) {
+    const stepInfo = await LegislationStepsInfo.findOne({ index });
     if (!stepInfo) {
       throw new AppError("Step info not found", HTTP_STATUS_CODE.NOT_FOUND);
     }

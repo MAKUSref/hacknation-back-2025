@@ -11,7 +11,7 @@ export interface ILegislationStepsInfo {
 
 const legislationStepsInfoSchema = new Schema<ILegislationStepsInfo>(
   {
-    index: { type: Number, enum: Object.values(LegislativeProcessStep), required: true },
+    index: { type: Number, unique: true, required: true },
     name: { type: String, required: true },
     place: { type: String, enum: Object.values(StepPlace), required: true, default: StepPlace.SEJM },
     description: { type: String, required: true },
