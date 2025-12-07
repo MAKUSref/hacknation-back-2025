@@ -1,9 +1,7 @@
-import LegislationProject, {
-  ILegislationProject,
-  ILegislationStep,
-} from "../model/LegislationProject";
+import LegislationProject from "../model/LegislationProject";
 import { AppError } from "../exception/AppError";
 import { HTTP_STATUS_CODE } from "../exception/http";
+import { ILegislationProject, ILegislationStep } from "../model/LegislationInterfaces";
 
 export class LegislationProjectService {
   static async create(
