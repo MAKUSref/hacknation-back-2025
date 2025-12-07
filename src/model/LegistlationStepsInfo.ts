@@ -2,7 +2,7 @@ import mongoose, { Schema, Document } from "mongoose";
 import { LegislativeProcessStep, StepPlace } from "./LegislationInterfaces";
 
 export interface ILegislationStepsInfo {
-    id: LegislativeProcessStep;
+    index: LegislativeProcessStep;
     name: string;
     place: StepPlace;
     description: string;
@@ -11,7 +11,7 @@ export interface ILegislationStepsInfo {
 
 const legislationStepsInfoSchema = new Schema<ILegislationStepsInfo>(
   {
-    id: { type: Number, enum: Object.values(LegislativeProcessStep), required: true },
+    index: { type: Number, enum: Object.values(LegislativeProcessStep), required: true },
     name: { type: String, required: true },
     place: { type: String, enum: Object.values(StepPlace), required: true, default: StepPlace.SEJM },
     description: { type: String, required: true },

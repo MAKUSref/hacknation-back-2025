@@ -87,6 +87,8 @@ export class LegislationProjectService {
   }
 
   static async getAllStepInfo() {
+    console.log('debil');
+    
     return LegislationStepsInfo.find();
   }
 
@@ -96,5 +98,9 @@ export class LegislationProjectService {
       throw new AppError("Step info not found", HTTP_STATUS_CODE.NOT_FOUND);
     }
     return stepInfo;
+  }
+
+  static async removeAllStepInfo() {
+    await LegislationStepsInfo.deleteMany({});
   }
 }

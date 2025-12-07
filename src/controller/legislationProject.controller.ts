@@ -70,4 +70,9 @@ export class LegislationProjectController {
     const stepInfo = await LegislationProjectService.getStepInfoById(Number(req.params.id));
     res.json(stepInfo);
   }
+
+  static async removeAllStepInfo(req: Request, res: Response) {
+    await LegislationProjectService.removeAllStepInfo();
+    res.status(204).send();
+  }
 }
