@@ -16,6 +16,17 @@ export class AuthService {
       config.JWT_SECRET
     );
     return token;
+  }
 
+  static async getUserInfo(token: string): Promise<{ userId: string; email: string }> {
+    try {
+      const decoded = jwt.verify(token, config.JWT_SECRET) as {
+        userId: string;
+        email: string;
+      };
+      return { userId: decoded.userId, email: decoded.email };
+    } catch (error) {
+      throw new AppError("Invalid token", HTTP_STATUS_CODE.UNAUTHORIZED);
+    }
   }
 }
